@@ -105,9 +105,9 @@
         </p>
 
         <div class="author-line">
-          <a href="mailto:1023244051@tju.edu.cn">Yuting Li</a>
+          <a href="mailto:1023244051@tju.edu.cn">Yuting Li<sup>*</sup></a>
           <span>&middot;</span>
-          <a href="mailto:hsy_23@tju.edu.cn">Shaoyuan Huang</a>
+          <a href="mailto:hsy_23@tju.edu.cn">Shaoyuan Huang<sup>*</sup></a>
           <span>&middot;</span>
           <a href="mailto:lxq8294@tju.edu.cn">Xiangqi Liu</a>
           <span>&middot;</span>
@@ -156,7 +156,7 @@
         </div>
 
         <figure class="hero-figure">
-          <img src="static/images/bridge/rag_architectures.png" alt="Comparison of cloud-based RAG, edge-based RAG, and cloud-edge RAG">
+          <img src="static/images/bridge/joint_reasoning_scene.png" alt="A grounded cloud-edge recommendation scene that needs both public cloud knowledge and private edge context">
         </figure>
       </div>
     </section>
@@ -213,6 +213,22 @@
             <h3>Adaptive block length</h3>
             <p>Balances communication savings and verification cost under changing runtime and network conditions.</p>
           </article>
+        </div>
+
+        <div class="usecase-panel">
+          <div class="usecase-copy">
+            <p class="section-kicker">Actual Use Case</p>
+            <h3>Public facts and private profile signals have to meet in one answer</h3>
+            <p>
+              In our real serving scenario, the cloud side contributes fresh public facts about the queried movie,
+              while the edge side contributes the user's background, profession, hobbies, and writing style.
+              BRIDGE fuses both sides into one explanation that is more personal than cloud-only RAG and more informed than edge-only retrieval.
+            </p>
+          </div>
+          <figure class="usecase-figure">
+            <img src="static/images/bridge/actual_use_case.jpeg" alt="Actual BRIDGE use case combining cloud-side public corpora and on-edge private corpora">
+            <figcaption>A concrete movie recommendation example showing how cloud-side public corpora and on-edge private corpora jointly shape the final response.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -287,27 +303,23 @@
             <p>On Movie-Wiki, BRIDGE reduces average latency by 50.3% versus VCR and 37.0% versus DRAGON on Qwen, while lowering P99 latency by up to 79.1%.</p>
           </article>
           <article>
-            <h3>Communication and rollback savings</h3>
-            <p>Compared with token-wise ablation, BRIDGE cuts communication cost by 32.1% and rollback frequency by 65.7% on Qwen.</p>
+            <h3>Reliable tail behavior</h3>
+            <p>Beyond mean latency gains, BRIDGE keeps tail latency under control, making collaborative RAG more practical under fluctuating network conditions.</p>
           </article>
         </div>
 
-        <div class="figure-grid">
-          <figure class="result-figure wide">
-            <img src="static/images/bridge/latency_results.png" alt="Latency results under different network conditions">
-            <figcaption>Average and P99 end-to-end latency stay markedly lower than distributed baselines under injected network delay.</figcaption>
+        <div class="results-grid">
+          <figure class="result-figure quality-figure">
+            <img src="static/images/bridge/quality_table.png" alt="Quality comparison table for BRIDGE against baselines">
+            <figcaption>BRIDGE delivers the strongest practical quality across both datasets and model families.</figcaption>
           </figure>
           <figure class="result-figure">
-            <img src="static/images/bridge/knowledge_integration.png" alt="Knowledge integration perplexity results">
-            <figcaption>BRIDGE keeps benefiting as more retrieved knowledge is integrated.</figcaption>
+            <img src="static/images/bridge/efficiency_latency_clean.png" alt="Latency comparison under different network conditions">
+            <figcaption>Average end-to-end latency remains lower than distributed baselines as injected network latency increases.</figcaption>
           </figure>
           <figure class="result-figure">
-            <img src="static/images/bridge/rollback_comm.png" alt="Rollback and communication comparison">
-            <figcaption>Block-wise speculation reduces both total rollbacks and communication time.</figcaption>
-          </figure>
-          <figure class="result-figure">
-            <img src="static/images/bridge/adaptive_throughput.png" alt="Adaptive block length throughput results">
-            <figcaption>The adaptive policy achieves the highest throughput across varying network conditions.</figcaption>
+            <img src="static/images/bridge/efficiency_rollback_clean.png" alt="Rollback and communication comparison between BRIDGE and the token-wise ablation">
+            <figcaption>Block-wise speculation reduces rollback frequency and communication cost compared with the token-wise ablation.</figcaption>
           </figure>
         </div>
       </div>
