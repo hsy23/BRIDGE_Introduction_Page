@@ -3,518 +3,386 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="BRIDGE: Block-Wise Speculative Coordination for Cloud-Edge Retrieval-Augmented Generation">
+  <meta name="description" content="SIGKDD 2026 project page for BRIDGE, a cloud-edge RAG framework that integrates public and private knowledge with block-wise speculative coordination.">
+  <meta name="keywords" content="RAG, cloud-edge, speculative decoding, privacy-preserving AI, distributed generation, SIGKDD 2026">
+  <meta name="author" content="Yuting Li, Shaoyuan Huang, Xiangqi Liu, Yunfeng Zhao, Xiaofei Wang">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+  <meta name="theme-color" content="#0e2238">
+
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="Tianjin University">
+  <meta property="og:title" content="BRIDGE: Block-Wise Speculative Coordination for Cloud-Edge Retrieval-Augmented Generation">
+  <meta property="og:description" content="A block-wise speculative RAG framework that jointly leverages public cloud knowledge and private edge knowledge without moving sensitive user data.">
+  <meta property="og:url" content="./">
+  <meta property="og:image" content="static/images/bridge/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="og:image:alt" content="BRIDGE project preview">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="BRIDGE: Block-Wise Speculative Coordination for Cloud-Edge Retrieval-Augmented Generation">
+  <meta name="twitter:description" content="Cloud-edge RAG with block-wise speculative coordination for lower latency and stronger personalization.">
+  <meta name="twitter:image" content="static/images/bridge/social_preview.png">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
-  <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <meta name="citation_title" content="BRIDGE: Block-Wise Speculative Coordination for Cloud-Edge Retrieval-Augmented Generation">
+  <meta name="citation_author" content="Li, Yuting">
+  <meta name="citation_author" content="Huang, Shaoyuan">
+  <meta name="citation_author" content="Liu, Xiangqi">
+  <meta name="citation_author" content="Zhao, Yunfeng">
+  <meta name="citation_author" content="Wang, Xiaofei">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining 2026">
+  <meta name="citation_pdf_url" content="static/pdfs/bridge.pdf">
 
+  <title>BRIDGE | SIGKDD 2026</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
+
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "BRIDGE: Block-Wise Speculative Coordination for Cloud-Edge Retrieval-Augmented Generation",
+    "description": "A block-wise speculative RAG framework that jointly leverages public cloud knowledge and private edge knowledge without moving sensitive user data or recomputing KV states.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      { "@type": "Person", "name": "Yuting Li", "affiliation": { "@type": "Organization", "name": "Tianjin University" } },
+      { "@type": "Person", "name": "Shaoyuan Huang", "affiliation": { "@type": "Organization", "name": "Tianjin University" } },
+      { "@type": "Person", "name": "Xiangqi Liu", "affiliation": { "@type": "Organization", "name": "Tianjin University" } },
+      { "@type": "Person", "name": "Yunfeng Zhao", "affiliation": { "@type": "Organization", "name": "Tianjin University" } },
+      { "@type": "Person", "name": "Xiaofei Wang", "affiliation": { "@type": "Organization", "name": "Tianjin University" } }
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026-01-01",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "ACM SIGKDD"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "./",
+    "image": "static/images/bridge/social_preview.png",
+    "keywords": ["RAG", "Cloud-edge systems", "Speculative decoding", "Privacy-preserving AI"],
+    "abstract": "BRIDGE is a block-wise speculative RAG framework for inter-database distributed generation that enables parallel cloud-edge retrieval and drafting while reducing communication overhead and rollback waste.",
     "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+      "@id": "./"
+    }
   }
   </script>
 </head>
 <body>
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">Top</button>
 
-
-  <!-- Scroll to Top Button -->
-  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
+  <header class="topbar">
+    <div class="container is-max-widescreen topbar-inner">
+      <a class="brand" href="#top">BRIDGE</a>
+      <nav class="topnav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#paper">Paper</a>
+        <a href="#citation">Citation</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+  <main id="top">
+    <section class="hero-shell">
+      <div class="hero-backdrop"></div>
+      <div class="container is-max-widescreen hero-content">
+        <p class="eyebrow">SIGKDD 2026</p>
+        <h1 class="hero-title">BRIDGE: Block-Wise Speculative Coordination for Cloud-Edge Retrieval-Augmented Generation</h1>
+        <p class="hero-summary">
+          BRIDGE jointly uses public cloud knowledge and private edge knowledge for retrieval-augmented generation,
+          while avoiding sensitive data transfer and reducing coordination stalls with block-wise speculative verification.
+        </p>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+        <div class="author-line">
+          <a href="mailto:1023244051@tju.edu.cn">Yuting Li</a>
+          <span>&middot;</span>
+          <a href="mailto:hsy_23@tju.edu.cn">Shaoyuan Huang</a>
+          <span>&middot;</span>
+          <a href="mailto:lxq8294@tju.edu.cn">Xiangqi Liu</a>
+          <span>&middot;</span>
+          <a href="mailto:yfzhao97@tju.edu.cn">Yunfeng Zhao</a>
+          <span>&middot;</span>
+          <a href="mailto:xiaofeiwang@tju.edu.cn">Xiaofei Wang</a>
+        </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
+        <p class="affiliation-line">
+          Tianjin University
+          <span class="dot-sep">&bull;</span>
+          <span>* Equal contribution</span>
+          <span class="dot-sep">&bull;</span>
+          <span>Corresponding author: Xiaofei Wang</span>
+        </p>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
+        <div class="hero-actions">
+          <a class="button action-btn primary-btn" href="static/pdfs/bridge.pdf" target="_blank" rel="noopener">
+            <span>Paper</span>
+          </a>
+          <a class="button action-btn" href="https://anonymous.4open.science/r/BRIDGE-3415" target="_blank" rel="noopener">
+            <span>Anonymous Code</span>
+          </a>
+          <a class="button action-btn" href="#citation">
+            <span>Cite</span>
+          </a>
+        </div>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+        <div class="metrics-band">
+          <div class="metric-item">
+            <span class="metric-value">79.1%</span>
+            <span class="metric-label">Max end-to-end latency reduction</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">46.0%</span>
+            <span class="metric-label">Average P99 latency reduction</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">65.7%</span>
+            <span class="metric-label">Rollback reduction on Qwen</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">34.8%</span>
+            <span class="metric-label">Best personalization gain over cloud-only RAG</span>
+          </div>
+        </div>
 
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+        <figure class="hero-figure">
+          <img src="static/images/bridge/rag_architectures.png" alt="Comparison of cloud-based RAG, edge-based RAG, and cloud-edge RAG">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="container is-max-widescreen">
+        <div class="section-heading">
+          <p class="section-kicker">Overview</p>
+          <h2>Why cloud-edge RAG needs a new coordination strategy</h2>
+        </div>
+        <div class="columns overview-grid">
+          <div class="column is-7">
+            <p class="lead">
+              Real deployments often split knowledge across two tiers: cloud-side corpora carry broad and fresh public information,
+              while edge-side storage holds private user context. Existing approaches either sacrifice personalization, expose sensitive data,
+              or pay heavy synchronization and rollback cost during collaborative decoding.
+            </p>
+            <p>
+              BRIDGE addresses this by letting both sides retrieve and draft in parallel, then coordinating them through block-wise transmission
+              and verification. The result is stronger relevance and personalization, lower latency, and better service stability under varying networks.
+            </p>
+          </div>
+          <div class="column is-5">
+            <div class="insight-stack">
+              <article class="insight-card">
+                <h3>Challenge 1</h3>
+                <p>Public knowledge and private user context live in different places, but practical RAG tasks need both.</p>
+              </article>
+              <article class="insight-card">
+                <h3>Challenge 2</h3>
+                <p>Token-level aggregation causes frequent cross-side synchronization and RTT-sensitive stalls.</p>
+              </article>
+              <article class="insight-card">
+                <h3>Challenge 3</h3>
+                <p>Speculative rejection wastes KV states and compute through rollback-heavy recomputation.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="contribution-strip">
+          <article>
+            <span class="contribution-index">01</span>
+            <h3>Block-wise speculative RAG</h3>
+            <p>Jointly uses cloud and edge retrieval without uploading private edge data or rebuilding KV states from raw text.</p>
+          </article>
+          <article>
+            <span class="contribution-index">02</span>
+            <h3>Block-wise transmission and verification</h3>
+            <p>Amortizes communication overhead and commits the longest acceptable prefix in one shot.</p>
+          </article>
+          <article>
+            <span class="contribution-index">03</span>
+            <h3>Adaptive block length</h3>
+            <p>Balances communication savings and verification cost under changing runtime and network conditions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="method">
+      <div class="container is-max-widescreen">
+        <div class="section-heading">
+          <p class="section-kicker">Method</p>
+          <h2>From token-wise waiting to block-wise coordination</h2>
+        </div>
+
+        <div class="media-panel">
+          <div class="media-copy">
+            <h3>BRIDGE framework</h3>
+            <p>
+              Cloud and edge decoders retrieve from their own corpora, draft tokens independently, buffer them into blocks,
+              and send the blocks to an event-driven coordinator. The coordinator verifies both drafts jointly against the
+              aggregated target distribution and broadcasts the committed prefix back to both sides.
+            </p>
+            <ul class="plain-list">
+              <li>Parallel cloud-edge drafting keeps both sides productive.</li>
+              <li>Block-wise verification improves acceptance efficiency and cuts rollback waste.</li>
+              <li>Adaptive block length keeps throughput high under latency fluctuation.</li>
+            </ul>
+          </div>
+          <figure class="media-figure">
+            <img src="static/images/bridge/bridge_framework.png" alt="Overview of the BRIDGE framework">
+          </figure>
+        </div>
+
+        <div class="columns pipeline-row">
+          <div class="column is-6">
+            <figure class="result-figure">
+              <img src="static/images/bridge/speculation_pipeline.png" alt="Token-wise versus block-wise speculative coordination pipeline">
+              <figcaption>Block-wise transmission reduces synchronization frequency and reaches longer committed outputs under the same wall-clock budget.</figcaption>
+            </figure>
+          </div>
+          <div class="column is-6">
+            <div class="method-notes">
+              <article>
+                <h3>Transmission</h3>
+                <p>BRIDGE batches draft tokens and auxiliary statistics into short blocks, reducing RTT-dominated communication overhead.</p>
+              </article>
+              <article>
+                <h3>Verification</h3>
+                <p>Instead of stopping at the first rejected token, BRIDGE verifies the whole draft block and commits the longest acceptable prefix.</p>
+              </article>
+              <article>
+                <h3>Adaptation</h3>
+                <p>Runtime profiling chooses a safe and efficient block length, preserving low latency while improving throughput.</p>
+              </article>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <section class="section" id="results">
+      <div class="container is-max-widescreen">
+        <div class="section-heading">
+          <p class="section-kicker">Results</p>
+          <h2>Higher quality, lower latency, and fewer wasted steps</h2>
+        </div>
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+        <div class="results-summary">
+          <article>
+            <h3>Best practical generation quality</h3>
+            <p>Across Co-Wiki and Movie-Wiki, BRIDGE achieves the strongest Q-A relevance and personalization among practical baselines in both Qwen and LLaMA series.</p>
+          </article>
+          <article>
+            <h3>Stable under network variance</h3>
+            <p>On Movie-Wiki, BRIDGE reduces average latency by 50.3% versus VCR and 37.0% versus DRAGON on Qwen, while lowering P99 latency by up to 79.1%.</p>
+          </article>
+          <article>
+            <h3>Communication and rollback savings</h3>
+            <p>Compared with token-wise ablation, BRIDGE cuts communication cost by 32.1% and rollback frequency by 65.7% on Qwen.</p>
+          </article>
+        </div>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+        <div class="figure-grid">
+          <figure class="result-figure wide">
+            <img src="static/images/bridge/latency_results.png" alt="Latency results under different network conditions">
+            <figcaption>Average and P99 end-to-end latency stay markedly lower than distributed baselines under injected network delay.</figcaption>
+          </figure>
+          <figure class="result-figure">
+            <img src="static/images/bridge/knowledge_integration.png" alt="Knowledge integration perplexity results">
+            <figcaption>BRIDGE keeps benefiting as more retrieved knowledge is integrated.</figcaption>
+          </figure>
+          <figure class="result-figure">
+            <img src="static/images/bridge/rollback_comm.png" alt="Rollback and communication comparison">
+            <figcaption>Block-wise speculation reduces both total rollbacks and communication time.</figcaption>
+          </figure>
+          <figure class="result-figure">
+            <img src="static/images/bridge/adaptive_throughput.png" alt="Adaptive block length throughput results">
+            <figcaption>The adaptive policy achieves the highest throughput across varying network conditions.</figcaption>
+          </figure>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
+    <section class="section alt-section" id="paper">
+      <div class="container is-max-widescreen">
+        <div class="section-heading">
+          <p class="section-kicker">Paper</p>
+          <h2>Abstract and materials</h2>
+        </div>
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <div class="columns paper-grid">
+          <div class="column is-7">
+            <div class="paper-panel">
+              <p>
+                Retrieval-augmented generation improves factuality by conditioning LLMs on retrieved evidence, but real deployments often split knowledge across tiers:
+                cloud-based RAG can exploit large public corpora, whereas edge-based RAG is the natural place to access private, user-specific stores.
+                BRIDGE asks how to jointly use both without transferring sensitive edge data or paying prohibitive coordination cost.
+              </p>
+              <p>
+                The framework introduces block-wise speculative coordination for inter-database distributed generation, including block-wise transmission,
+                block-wise verification, and an adaptive block-length strategy. Across public-private RAG benchmarks, model families, and network regimes,
+                BRIDGE improves relevance and personalization while reducing end-to-end latency by up to 79.1%.
+              </p>
+            </div>
+          </div>
+          <div class="column is-5">
+            <div class="resource-panel">
+              <a class="resource-link" href="static/pdfs/bridge.pdf" target="_blank" rel="noopener">
+                <span class="resource-tag">PDF</span>
+                <span>
+                  <strong>Full Paper</strong>
+                  <small>Read the PDF version used for this page.</small>
+                </span>
+              </a>
+              <a class="resource-link" href="https://anonymous.4open.science/r/BRIDGE-3415" target="_blank" rel="noopener">
+                <span class="resource-tag">CODE</span>
+                <span>
+                  <strong>Anonymous Code</strong>
+                  <small>Implementation referenced in the manuscript.</small>
+                </span>
+              </a>
+              <a class="resource-link" href="mailto:xiaofeiwang@tju.edu.cn">
+                <span class="resource-tag">MAIL</span>
+                <span>
+                  <strong>Contact</strong>
+                  <small>xiaofeiwang@tju.edu.cn</small>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+    </section>
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
+    <section class="section" id="citation">
+      <div class="container is-max-desktop">
+        <div class="section-heading">
+          <p class="section-kicker">Citation</p>
+          <h2>BibTeX</h2>
         </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+        <div class="citation-box">
+          <button class="copy-bibtex-btn" id="copyBibtexBtn" type="button">
+            <span class="copy-label">Copy</span>
+          </button>
+          <pre id="bibtex-code">@inproceedings{li2026bridge,
+  title     = {BRIDGE: Block-Wise Speculative Coordination for Cloud-Edge Retrieval-Augmented Generation},
+  author    = {Li, Yuting and Huang, Shaoyuan and Liu, Xiangqi and Zhao, Yunfeng and Wang, Xiaofei},
+  booktitle = {Proceedings of the ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  year      = {2026}
+}</pre>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+    </section>
+  </main>
+</body>
+</html>
